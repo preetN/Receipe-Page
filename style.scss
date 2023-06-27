@@ -1,0 +1,59 @@
+$font-stack: "Ysabeau Infant";
+$primarycolor: #18d1bb;
+$sec-color: #d9d9d9;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+.container {
+  padding: 1rem 4rem;
+}
+.flex {
+  display: flex;
+}
+.logo-section {
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primarycolor;
+}
+.navbar-section {
+  background-color: $sec-color;
+  ul {
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    li {
+      list-style: none;
+    }
+  }
+}
+.hero-section {
+  padding: 5rem 5rem;
+  background-color: $primarycolor;
+  align-items: center;
+  justify-content: space-evenly;
+  .description {
+    padding: 1rem;
+  }
+  .image {
+    img {
+      width: 100%;
+      min-width: 100px;
+      max-width: 310px;
+    }
+  }
+}
+.meal-section {
+  justify-content: space-between;
+  background-color: $sec-color;
+  padding: 2rem 4rem;
+  .meal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 3rem;
+    }
+  }
+}

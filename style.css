@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ysabeau Infant";
+}
+
+.container {
+  padding: 1rem 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo-section {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #18d1bb;
+}
+
+.navbar-section {
+  background-color: #d9d9d9;
+}
+.navbar-section ul {
+  justify-content: space-between;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+.navbar-section ul li {
+  list-style: none;
+}
+
+.hero-section {
+  padding: 5rem 5rem;
+  background-color: #18d1bb;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hero-section .description {
+  padding: 1rem;
+}
+.hero-section .image img {
+  width: 100%;
+  min-width: 100px;
+  max-width: 310px;
+}
+
+.meal-section {
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  padding: 2rem 4rem;
+}
+.meal-section .meal {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meal-section .meal i {
+  font-size: 3rem;
+}/*# sourceMappingURL=style.css.map */
