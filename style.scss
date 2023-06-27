@@ -1,6 +1,8 @@
 $font-stack: "Ysabeau Infant";
 $primarycolor: #18d1bb;
 $sec-color: #d9d9d9;
+$text-color1: black;
+$text-color2: white;
 * {
   margin: 0;
   box-sizing: border-box;
@@ -12,6 +14,9 @@ $sec-color: #d9d9d9;
 }
 .flex {
   display: flex;
+}
+.grid {
+  display: grid;
 }
 .logo-section {
   align-items: center;
@@ -30,7 +35,7 @@ $sec-color: #d9d9d9;
 }
 .hero-section {
   padding: 5rem 5rem;
-  background-color: $primarycolor;
+  background: radial-gradient(white, $primarycolor);
   align-items: center;
   justify-content: space-evenly;
   .description {
@@ -49,11 +54,50 @@ $sec-color: #d9d9d9;
   background-color: $sec-color;
   padding: 2rem 4rem;
   .meal {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    i {
-      font-size: 3rem;
+    a {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      i {
+        font-size: 3rem;
+      }
+      p {
+        padding: 0.2rem 1.2rem;
+        background-color: $primarycolor;
+        color: $text-color2;
+      }
+    }
+  }
+}
+.popular_collection-section {
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    padding-bottom: 2rem;
+  }
+  .popular {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    .meal1 {
+      background: $primarycolor;
+      .imagepart {
+        width: 250px;
+        img {
+          width: 100%;
+        }
+      }
+      .descriptionpart {
+        padding-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+        color: $text-color2;
+        a {
+          text-decoration: none;
+          color: $text-color2;
+        }
+      }
     }
   }
 }
