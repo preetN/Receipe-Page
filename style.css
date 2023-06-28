@@ -20,6 +20,32 @@
   align-items: center;
   justify-content: space-between;
   background-color: #18d1bb;
+  position: sticky;
+  top: 0;
+}
+.logo-section .logo {
+  border-radius: 50%;
+}
+.logo-section .logo img {
+  border-radius: 50%;
+}
+.logo-section .logo img:hover {
+  box-shadow: 0 4px 8px 0 grey;
+}
+.logo-section .searchbar {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+.logo-section .searchbar input {
+  border: none;
+}
+.logo-section .searchbar i {
+  cursor: pointer;
+}
+
+.searchbar:hover {
+  box-shadow: 0 4px 8px 0 grey;
 }
 
 .navbar-section {
@@ -32,6 +58,11 @@
 }
 .navbar-section ul li {
   list-style: none;
+  transition: transform 1s;
+}
+.navbar-section ul li:hover {
+  transform: scale(1.5);
+  text-shadow: 2px 2px 4px #000000;
 }
 .navbar-section ul li a {
   text-decoration: none;
@@ -44,6 +75,11 @@
   background: radial-gradient(white, #18d1bb);
   align-items: center;
   justify-content: space-evenly;
+  transition: background 5s ease-out;
+}
+.hero-section:hover {
+  background: url(/img/cooking1.jpeg) no-repeat;
+  background-size: cover;
 }
 .hero-section .description {
   padding: 1rem;
