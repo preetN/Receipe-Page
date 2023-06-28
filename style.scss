@@ -30,6 +30,11 @@ $text-color2: white;
     padding-inline-start: 0px;
     li {
       list-style: none;
+      a {
+        text-decoration: none;
+        color: $text-color1;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -98,6 +103,101 @@ $text-color2: white;
           color: $text-color2;
         }
       }
+    }
+  }
+}
+// Featured Receipes
+.featured {
+  background: $sec-color;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+// QuickPicks
+.quick-pick-section {
+  flex-direction: column;
+  align-items: center;
+  .quick-pick-list {
+    .quick-pick {
+      margin-top: 2rem;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 1rem 2rem;
+      background-color: $primarycolor;
+      border-radius: 0rem 2rem 2rem 2rem;
+      .pick1 {
+        align-items: center;
+        .left {
+          img {
+            border-radius: 0rem 1rem 1rem 1rem;
+          }
+        }
+        .right {
+          padding: 1rem;
+        }
+      }
+      .btn-quick-pick {
+        button {
+          border: none;
+          padding: 0.5rem 1.5rem;
+          border-radius: 0rem 1rem 1rem 1rem;
+          background-color: $sec-color;
+          color: $text-color2;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+// Subscribe
+.subscribe-section {
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: $sec-color;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    .information {
+      gap: 2rem;
+      input {
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        border: none;
+        text-align: center;
+      }
+    }
+    .btn-subscribe {
+      button {
+        padding: 0.5rem 2rem;
+        background-color: $primarycolor;
+        color: $text-color2;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.footer {
+  padding: 2rem;
+  flex-direction: column;
+  background-color: $text-color1;
+  color: $text-color2;
+  align-items: center;
+  gap: 1rem;
+  ul {
+    gap: 2rem;
+    li {
+      list-style: none;
     }
   }
 }

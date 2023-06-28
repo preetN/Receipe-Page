@@ -33,6 +33,11 @@
 .navbar-section ul li {
   list-style: none;
 }
+.navbar-section ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
 
 .hero-section {
   padding: 5rem 5rem;
@@ -99,4 +104,92 @@
 .popular_collection-section .popular .meal1 .descriptionpart a {
   text-decoration: none;
   color: white;
+}
+
+.featured {
+  background: #d9d9d9;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.featured h2 {
+  margin-bottom: 2rem;
+}
+
+.quick-pick-section {
+  flex-direction: column;
+  align-items: center;
+}
+.quick-pick-section .quick-pick-list .quick-pick {
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem 2rem;
+  background-color: #18d1bb;
+  border-radius: 0rem 2rem 2rem 2rem;
+}
+.quick-pick-section .quick-pick-list .quick-pick .pick1 {
+  align-items: center;
+}
+.quick-pick-section .quick-pick-list .quick-pick .pick1 .left img {
+  border-radius: 0rem 1rem 1rem 1rem;
+}
+.quick-pick-section .quick-pick-list .quick-pick .pick1 .right {
+  padding: 1rem;
+}
+.quick-pick-section .quick-pick-list .quick-pick .btn-quick-pick button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0rem 1rem 1rem 1rem;
+  background-color: #d9d9d9;
+  color: white;
+  cursor: pointer;
+}
+
+.subscribe-section {
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+.subscribe-section h2 {
+  margin-bottom: 2rem;
+}
+.subscribe-section .subscribe {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.subscribe-section .subscribe .information {
+  gap: 2rem;
+}
+.subscribe-section .subscribe .information input {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  text-align: center;
+}
+.subscribe-section .subscribe .btn-subscribe button {
+  padding: 0.5rem 2rem;
+  background-color: #18d1bb;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 2rem;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  align-items: center;
+  gap: 1rem;
+}
+.footer ul {
+  gap: 2rem;
+}
+.footer ul li {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
